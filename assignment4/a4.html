@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Animal Shelter Registration</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Abhishek Maharjan">
+
+  <!--custom CSS file for styling the form-->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!--jQuery to handle form submission -->
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+
+  <!--JS file for handling the form submission-->
+  <script type="text/javascript" src="js/submit.js"></script>
+</head>
+<body>
+  <!--registration form container-->
+  <div id="wrapper">
+    <!--POST requests for registration-->
+    <form method="post" action="" id="registration">
+      <legend>
+        <h2>User Registration</h2>
+      </legend>
+      <fieldset>
+        <!--Input field for username-->
+        <label for="username">Username:</label>
+        <input type="text" name="username" />
+      </fieldset>
+      <fieldset>
+        <!--Input field for full name-->
+        <label for="fullname">Full Name:</label>
+        <input type="text" name="fullname" />
+      </fieldset>
+      <fieldset>
+        <!--Input field for email-->
+        <label for="email">Email:</label>
+        <input type="text" name="email" />
+      </fieldset>
+      <fieldset>
+        <!--Input field for date of birth-->
+        <label for="dob">Date of Birth:</label>
+        <input type="text" name="dob" />
+      </fieldset>
+      <!--Submit button for the form-->
+      <button type="submit">Submit</button>
+    </form>
+
+    <!--success or error messages-->
+    <div id="server_response"><span></span></div>
+  </div>
+</body>
+</html>
